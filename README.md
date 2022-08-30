@@ -4,28 +4,30 @@ Billing APIs allow you to view and manage your billing details programmatically.
 <h> Mainly Option Available</h>
 <h1 style="font-size:10vw">BILLING API</h1>
 
-<h> Whatsapp Pramotion</h>
+<h> Whatsapp API / BILLINGS  API</h>
 
-<h1>Wg</h1>
+<h1>API FEATURES</h1>
 
 <form action="/action_page.php">
+<label for="vehicle1">1. API Dashboard</label><br>
+<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(19).png" style="max-width:100%;height:auto;">
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> Whatsapp Pramotion</label><br>
+    <label for="vehicle1">2. Whatsapp Pramotion</label><br>
   <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(13).png" style="max-width:100%;height:auto;">
 
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">  
-  <label for="vehicle2">Payment Qr Code Setup</label><br>
+  <label for="vehicle2">3. Payment Qr Code Setup</label><br>
   <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(18).png" style="max-width:100%;height:auto;">
-  <label for="vehicle2">Payment Qr code Method</label><br>
+  <label for="vehicle2">4. Payment Qr code Method</label><br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
   <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(15).png" style="max-width:100%;height:auto;">
-  <label for="vehicle2">Payment Qr bank (SHORT uRL AS WELL)</label><br>
+  <label for="vehicle2">5. Payment Qr bank (SHORT uRL AS WELL)</label><br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
   <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(17).png" style="max-width:100%;height:auto;">
-  <label for="vehicle3">Payment Qr UPI</label><br><br>
+  <label for="vehicle3">6. Payment Qr UPI</label><br><br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
   <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(16).png" style="max-width:100%;height:auto;">
-  <label for="vehicle3">Whatsapp Qr Code generate</label><br><br>
+  <label for="vehicle3">7. Whatsapp Qr Code generate</label><br><br>
   
   <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(14).png" style="max-width:100%;height:auto;">
   <input type="submit" value="Submit">
