@@ -16,6 +16,7 @@ Billing APIs allow you to view and manage your billing details programmatically.
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
   <label for="vehicle3"> I have a boat</label><br><br>
   <input type="submit" value="Submit">
+  </form>
 <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(13).png" style="max-width:100%;height:auto;">
 <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(18).png" style="max-width:100%;height:auto;">
 
