@@ -1,6 +1,16 @@
 # BILLING_API
 Billing APIs allow you to view and manage your billing details programmatically.  Operation groups listed below do not support all billing accounts.  Supported billing accounts are specified in the table. To identify your billing account type,
 
+<h> Mainly Option Available</h>
+
+<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(10).png" style="max-width:100%;height:auto;">
+<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(15).png" style="max-width:100%;height:auto;">
+<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(14).png" style="max-width:100%;height:auto;">
+<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(13).png" style="max-width:100%;height:auto;">
+<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(18).png" style="max-width:100%;height:auto;">
+
+
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <a href="https://github.com/sanjayengineer121/BILLING_API/releases" rel="nofollow"><img src="https://camo.githubusercontent.com/1c4959f767490620530549105570f72a619c1531859015de2f9097367a695018/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f626f6f747374726170" alt="RELEASE" data-canonical-src="https://github.com/sanjayengineer121/BILLING_API/releases" style="max-width: 100%;"></a>
