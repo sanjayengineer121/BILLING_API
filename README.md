@@ -19,20 +19,22 @@ Billing APIs allow you to view and manage your billing details programmatically.
   <label for="vehicle2">Payment Qr code Method</label><br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
   <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(15).png" style="max-width:100%;height:auto;">
-  
+  <label for="vehicle2">Payment Qr bank (SHORT uRL AS WELL)</label><br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(15).png" style="max-width:100%;height:auto;">
-  <label for="vehicle2">Payment Qr Setup</label><br>
+  <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(17).png" style="max-width:100%;height:auto;">
+  <label for="vehicle3">Payment Qr UPI</label><br><br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3"> I have a boat</label><br><br>
+  <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(16).png" style="max-width:100%;height:auto;">
+  <label for="vehicle3">Whatsapp Qr Code generate</label><br><br>
+  
+  <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(14).png" style="max-width:100%;height:auto;">
   <input type="submit" value="Submit">
   </form>
 
 
 
-<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(10).png" style="max-width:100%;height:auto;">
 
-<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(14).png" style="max-width:100%;height:auto;">
+
 
 
 
