@@ -6,22 +6,32 @@ Billing APIs allow you to view and manage your billing details programmatically.
 
 <h> Whatsapp Pramotion</h>
 
-<h1>Show Checkboxes</h1>
+<h1>Wg</h1>
 
 <form action="/action_page.php">
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1"> I have a bike</label><br>
+    <label for="vehicle1"> Whatsapp Pramotion</label><br>
+  <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(13).png" style="max-width:100%;height:auto;">
+
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">  
+  <label for="vehicle2">Payment Qr Code Setup</label><br>
+  <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(18).png" style="max-width:100%;height:auto;">
+  <label for="vehicle2">Payment Qr code Method</label><br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2"> I have a car</label><br>
+  <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(15).png" style="max-width:100%;height:auto;">
+  
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(15).png" style="max-width:100%;height:auto;">
+  <label for="vehicle2">Payment Qr Setup</label><br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
   <label for="vehicle3"> I have a boat</label><br><br>
   <input type="submit" value="Submit">
   </form>
-<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(13).png" style="max-width:100%;height:auto;">
-<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(18).png" style="max-width:100%;height:auto;">
+
+
 
 <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(10).png" style="max-width:100%;height:auto;">
-<img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(15).png" style="max-width:100%;height:auto;">
+
 <img src="https://github.com/sanjayengineer121/BILLING_API/blob/main/Screenshot%20(14).png" style="max-width:100%;height:auto;">
 
 
