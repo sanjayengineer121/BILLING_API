@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/stylecss.css">
+  <link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css" />
+  <title>Whatsapp Qr</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Whatsapp Qr-Code Generator</h1>
+    </div>
+    <div class="input-form" method="post">
+    
+        <label>Mobile No</label>
+        <input type="text" class="qr-input" name="Mobile" placeholder="Enter Mobile..."><br>
+        <label>Greeting Message</label>
+        <input type="text" class="qr-input1"  name="Message" placeholder="Enter Message..."><br>
+        <button class="generate-btn" action="/GENQR" >Generate QR Code</button>
+
+</div>
+    
+    <div class="qr-code">
+      <img src="data/whatsappQr/qrcode.png" class="qr-image">
+    </div>
+  </div>
+
+  <script>
+    var container = document.querySelector(".container");
+    var generateBtn = document.querySelector(".generate-btn");
+    var qrInput = document.querySelector(".qr-input");
+    var qrInput1 = document.querySelector(".qr-input1");
+    var qrImg = document.querySelector(".qr-image");
+
+    generateBtn.onclick = function () {      
+      if(qrInput.value.length > 0){ 
+        generateBtn.innerText = "Generating QR Code..."   
+        s="https://wa.me/91"+qrInput.value+"?text="+qrInput1.value    
+        qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=170x170&data="+s;
+        qrImg.onload = function () {
+          container.classList.add("active");
+          generateBtn.innerText = "Generate QR Code";
+          
+        }
+      }
+    }
+  </script>
+</body>
+</html>

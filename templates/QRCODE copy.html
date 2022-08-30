@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Generator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="static\css\stylecss.css">
+</head>
+
+<body>
+    <div style="margin-top: 50px;" class="ui container">
+        <h1 class="ui center aligned header">Qr Generator</h1>
+
+        <form class="ui form" action="/GENQR" method="post">
+            <div class="field">
+                <label>Mobile No</label>
+                <input type="text" name="Mobile" placeholder="Enter Mobile..."><br>
+                <label>Greeting Message</label>
+                <input type="text" name="Message" placeholder="Enter Message..."><br>
+            </div>
+            <button class="ui blue button" class="generate-btn" type="submit">whatsapp QR</button>
+        </form>
+
+            <div class="qr-code">
+              <img src="data/whatsappQr/qrcode.png" class="qr-image">
+            </div>
+          </div>
+        
+          <script>
+            var container = document.querySelector(".container");
+            var generateBtn = document.querySelector(".generate-btn");
+            var qrInput = document.querySelector(".qr-input");
+            var qrImg = document.querySelector(".qr-image");
+        
+            generateBtn.onclick = function () {      
+              if(qrInput.value.length > 0){ 
+                generateBtn.innerText = "Generating QR Code..."       
+                qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=170x170&data="+{qrdata};
+                qrImg.onload = function () {
+                  container.classList.add("active");
+                  generateBtn.innerText = "Generate QR Code";
+                }
+              }
+            }
+          </script>
+
+</body>
+
+</html>

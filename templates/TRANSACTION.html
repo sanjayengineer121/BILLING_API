@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+  {% block content %}
+<!--
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-warning" id="Email"><a  href="/email">Email Login</a></button>
+-->
+<button type="button" class="btn btn-dark" id="PRAMOTION"><a href="/pramotion" style="text-decoration: none;">MARKETING PRAMOTION</a></button>
+
+<button type="button" class="btn btn-success" id="exportexcel">Export Excel Sheet</button>
+
+<button type="button" class="btn btn-info" id="whatsapp"><a  href="/whatsapp" style="text-decoration: none;">whatsapp QR</a></button>
+
+<button type="button" class="btn btn-danger" id="UPIQRGEN"><a  href="/payment" style="text-decoration: none;">UPI QR GEN</a></button>
+
+
+<table id="data"  class="content-table">
+  <thead>
+    <tr>
+      <th>sno</th>
+      <th>Mobile</th>
+      <th>Msg</th>
+      <th>date</th>
+    </tr>
+  </thead>
+  
+    <tbody>
+    <tr>
+      {% for TODO in DATA %}
+      <td>{{TODO.sno}}</td>
+      <td>{{TODO.Mobile}}</td>
+      <td>{{TODO.Msg}}</td>
+      <td>{{TODO.date}}</td>
+    </tr>
+  </thead>
+  
+  </tbody>
+  {% endfor %}
+</table>
+{% endblock %}
+
+
+
+{% block scripts %}
+<script>
+  $(document).ready(function () {
+    $('#data').DataTable({
+      ajax: '/api/data',
+      serverSide: true,
+      columns: [
+        {data: 'sno'},
+        {data: 'Mobile'},
+        {data: 'Msg', orderable: false},
+        {data: 'date'}
+      ],
+    });
+  });
+</script>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "home.html" %}
+ 
+{% block content %}
+    <h1 class="ui center aligned header">EMAIL DATA</h1>
+
+
+  <table id="data"  class="content-table">
+    <thead>
+      <tr>
+        <th>sno</th>
+        <th>BANK A/C</th>
+        <th>IFSC CODE</th>
+		    <th>PAYEE NAME(Ownername)</th>
+		    <th>UPI ID</th>
+        <th>DATE</th>
+        <th>STATUS</th>
+      </tr>
+    </thead>
+    
+      <tbody>
+      <tr>
+        {% for Paymentsetup in Paymentdata %}
+        <td>{{ Paymentsetup.sno }}</td>
+        <td>{{ Paymentsetup.bankacc }}</td>
+        <td>{{ Paymentsetup.Ifsccode }}</td>
+        <td>{{ Paymentsetup.Ownername }}</td>
+		    <td>{{ Paymentsetup.UpiId }}</td>
+		    <td>{{ Paymentsetup.date }}</td>
+        <td>
+          {% if Paymentsetup.status == False %}
+            <span class="ui gray label">Disabled</span>
+            {% else %}
+            <span class="ui green label">Enabled</span>
+            {% endif %}
+
+            <a class="ui blue button" href="/update/{{ Paymentsetup.sno }}">Update</a>
+            
+        </td> 
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+
+  {% endblock %}
+
+
+
+  {% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable({
+        ajax: '/api/data',
+        columns: [
+          {data: 'id'},
+          {data: 'title', searchable: false},
+          {data: 'author', orderable: false, searchable: false},
+          {data: 'complete', orderable: false, searchable: false}
+        ],
+      });
+    });
+  </script>
+{% endblock %}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WHATSAPP PROMATION</title>
+	<style type="text/css">
+		div, input, a {
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #00aaff;
+		}
+		.box {
+			width: 500px;
+			margin: 100px auto;
+			padding: 16px;
+			border-radius: 8px;
+			background-color: #ccc;
+		}
+		form {
+			width: 100%;
+			background-color: #ccc;
+			margin-bottom: 24px;
+		}
+		input[type=text] {
+			width: 85%;
+			padding: 8px;
+			font-size: 16px;
+		}
+		input[type=submit] {
+			padding: 8px 16px;
+			font-size: 16px;
+		}
+		.todo {
+			width: 100%;
+			margin-bottom: 16px;
+			padding: 5px;
+			background-color: #fff;
+			border-radius: 5px;
+		}
+		.title {
+			font-size: 20px;
+		}
+		.btn {
+			display: inline-block;
+			padding: 5px 10px;
+			border-radius: 5px;
+			text-decoration: none;
+			color: white;
+			font-variant: small-caps;
+		}
+		.btn-update {
+			background-color: #3dae62;
+		}
+		.btn-del {
+			background-color: #d92626;
+		}
+		.status {
+			margin-right: 8px;
+			font-size: 20px;
+			color: #000;
+		}
+		.btns {
+			float: right;
+		}
+		.pending {
+			display: flex;
+			text-align: right;
+			margin-bottom: 8px;
+		}
+
+		body {
+			font-family: 'Tangerine', serif;
+			font-size: 48px;
+			}
+	</style>
+	<link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css" />
+
+	
+</head>
+<body>
+<div class="box">
+	<div>Whatsapp Pramotion</div>
+	<form action="/pramote" method="post">
+		<textarea id="w3review" name="message" rows="4" cols="50">Message</textarea><br>
+		<label>Select File </label>
+		<input type="text" id="w3review" name="file" rows="4" cols="50" placeholder="File path">
+		<input type="submit" value="Pramote">
+	</form>
+</div>
+</body>
+</html>
